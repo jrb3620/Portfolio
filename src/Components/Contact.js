@@ -54,12 +54,12 @@ export default function Contact() {
                                 EMAIL
                             </h2>
                             <a className="text-indigo-400 leading-relaxed">
-                                reedbarger@email.com
+                                jonathanbuckner@me.com
                             </a>
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                                 PHONE
                             </h2>
-                            <p className="leading-relaxed">123-456-7890</p>
+                            <p className="leading-relaxed">214-240-4886</p>
                         </div>
                     </div>
                 </div>
@@ -72,8 +72,7 @@ export default function Contact() {
                         Hire Me
                     </h2>
                     <p className="leading-relaxed mb-5">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-                        suscipit officia aspernatur veritatis. Asperiores, aliquid?
+                        Looking for entry level positions where I can add value and develop skills with experienced professionals. 
                     </p>
                     <div className="relative mb-4">
                         <label htmlFor="name" className="leading-7 text-sm text-gray-400">
