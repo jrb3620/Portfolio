@@ -11,17 +11,17 @@ export const projects = [
     title: "Mission Impossible Sort",
     subtitle: "Language: C++",
     description:
-      "In this project, I turned a circularly linked list into a doubly linked list, sorted the data through an advanced algorithm, developed a new generic template that could be inherited by the nodes, and then attached. Finally, we had to print a data report of all of the nodes.",
+      "In this project, I turned a circularly linked list into a doubly linked list, sorted the data through an advanced algorithm, and developed a new generic template that could be inherited and attached to the nodes. Finally, we had to print a data report of all of the nodes.",
     image: "./project-2.gif",
       link: "https://github.com/jrb3620/Mission-Impossible-Sort",
   },
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
+    title: "Hashing Theory",
+    subtitle: "Language: C++",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+          "For this lab, we had to take an input file of 100 strings of 16 characters and place them into a hash table. The \"Burris\" function was the original hash function which we had to critique, and then create our own more efficient hash function. We had to use both a linear and random probe technique and had to print out the statistics for the efficiency of the hash function used. I opted to use a boolean to select between my hash function and Burris' hash function.",
     image: "./project-3.gif",
-    link: "https://reactbootcamp.com",
+      link: "https://github.com/jrb3620/hashing-lab",
   },
    {
     title: "Epic Todo App",
