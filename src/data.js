@@ -24,12 +24,12 @@ export const projects = [
       link: "https://github.com/jrb3620/hashing-lab",
   },
    {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
+    title: "Library Database Project",
+    subtitle: "Languages: Java, SQL",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "For this project, I created a Java GUI that linked through an SQL connector to manage a library database. Staff members can log in, add, view, search, update and delete books in a library. The log in credentials are encrypted, and edits to the library can't be pushed unless the user is logged in.",
     image: "./project-4.gif",
-    link: "https://reactbootcamp.com",
+       link: "https://github.com/jrb3620/Library-DB-Project",
   }
 ];
 
