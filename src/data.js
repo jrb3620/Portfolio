@@ -8,12 +8,12 @@ export const projects = [
         link: "https://github.com/jrb3620/Space-Station-Circular-Queue",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
+    title: "Mission Impossible Sort",
+    subtitle: "Language: C++",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "In this project, I turned a circularly linked list into a doubly linked list, sorted the data through an advanced algorithm, developed a new generic template that could be inherited by the nodes, and then attached. Finally, we had to print a data report of all of the nodes.",
     image: "./project-2.gif",
-    link: "https://reactbootcamp.com",
+      link: "https://github.com/jrb3620/Mission-Impossible-Sort",
   },
   {
     title: "DevChat",
