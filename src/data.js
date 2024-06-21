@@ -19,7 +19,7 @@ export const projects = [
     title: "Hashing Theory",
     subtitle: "Language: C++",
     description:
-          "For this lab, we had to take an input file of 100 strings of 16 characters and place them into a hash table. The \"Burris\" function was the original hash function which we had to critique, and then create our own more efficient hash function. We had to use both a linear and random probe technique and had to print out the statistics for the efficiency of the hash function used. I opted to use a boolean to select between my hash function and Burris' hash function.",
+          "For this project, we had to take an input file of 100 strings of 16 characters and place them into a hash table. The \"Burris\" function was the original hash function which we had to critique, and then create our own more efficient hash function. We had to use both a linear and random probe technique and had to print out the statistics for the efficiency of the hash function used. I opted to use a boolean to select between my hash function and Burris' hash function.",
     image: "./project-3.gif",
       link: "https://github.com/jrb3620/hashing-lab",
   },
