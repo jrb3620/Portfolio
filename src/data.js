@@ -1,11 +1,11 @@
 export const projects = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
+    title: "Space Station Circular Queue",
+    subtitle: "Language: Ada",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "In this project, I converted data types, instantiated generic templates at runtime, and printing out reports of data trends, all while using I/O redirection",
     image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
+        link: "https://github.com/jrb3620/Space-Station-Circular-Queue",
   },
   {
     title: "React Tracks",
@@ -23,7 +23,7 @@ export const projects = [
     image: "./project-3.gif",
     link: "https://reactbootcamp.com",
   },
-  {
+  
     title: "Epic Todo App",
     subtitle: "React Hooks",
     description:
