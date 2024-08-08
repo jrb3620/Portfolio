@@ -5,23 +5,11 @@ export default function Contact() {
     const [email, setEmail] = React.useState("");
     const [message, setMessage] = React.useState("");
 
-    function encode(data) {
-        return Object.keys(data)
-            .map(
-                (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-            )
-            .join("&");
-    }
-
     function handleSubmit(e) {
         e.preventDefault();
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", name, email, message }),
-        })
-            .then(() => alert("Message sent!"))
-            .catch((error) => alert(error));
+        // You can remove this or keep it if you want to alert on form submission
+        alert("Message sent!");
+        // Remove the fetch call to let Netlify handle the form submission
     }
 
     return (
@@ -130,3 +118,4 @@ export default function Contact() {
         </section>
     );
 }
+
