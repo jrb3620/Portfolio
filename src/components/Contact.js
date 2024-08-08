@@ -64,15 +64,24 @@ export default function Contact() {
                     </div>
                 </div>
                 <form
-                    netlify
                     name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
                     onSubmit={handleSubmit}
-                    className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                    className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+                >
+                    {/* Hidden honeypot field for spam prevention */}
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p hidden>
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+
                     <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
                         Hire Me
                     </h2>
                     <p className="leading-relaxed mb-5">
-                        Looking for entry level positions where I can add value and develop skills with experienced professionals. 
+                        Looking for entry-level positions where I can add value and develop skills with experienced professionals.
                     </p>
                     <div className="relative mb-4">
                         <label htmlFor="name" className="leading-7 text-sm text-gray-400">
