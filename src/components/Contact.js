@@ -1,6 +1,17 @@
 import React from "react";
 
 export default function Contact() {
+    function handleSubmit(e) {
+        e.preventDefault();
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(new FormData(e.target)).toString(),
+        })
+            .then(() => alert("Form submitted successfully!"))
+            .catch((error) => alert(error));
+    }
+
     return (
         <section id="contact" className="relative">
             <div className="container px-5 py-10 mx-auto">
@@ -8,10 +19,17 @@ export default function Contact() {
                     name="contact"
                     method="POST"
                     data-netlify="true"
-                    className="w-full flex flex-col bg-gray-800 p-8 rounded-lg">
+                    data-netlify-honeypot="bot-field"
+                    className="w-full flex flex-col bg-gray-800 p-8 rounded-lg"
+                    onSubmit={handleSubmit}>
 
                     {/* Hidden input to pass form name */}
                     <input type="hidden" name="form-name" value="contact" />
+
+                    {/* Honeypot field to prevent spam */}
+                    <p hidden>
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
 
                     <div className="mb-4">
                         <label htmlFor="name" className="block text-sm text-gray-400">
