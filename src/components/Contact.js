@@ -1,23 +1,6 @@
 import React from "react";
 
-export default function Contact({ onFormSubmit }) {
-    function handleSubmit(e) {
-        e.preventDefault();
-        const form = e.target;
-        const data = new FormData(form);
-
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(data).toString(),
-        })
-            .then(() => {
-                onFormSubmit(); // Trigger the thank-you page
-                form.reset();
-            })
-            .catch((error) => alert(error));
-    }
-
+export default function Contact() {
     return (
         <section id="contact" className="relative">
             <div className="container px-5 py-10 mx-auto">
@@ -27,7 +10,6 @@ export default function Contact({ onFormSubmit }) {
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     className="w-full flex flex-col bg-gray-800 p-8 rounded-lg"
-                    onSubmit={handleSubmit}
                 >
 
                     {/* Hidden input to pass form name */}
@@ -38,7 +20,6 @@ export default function Contact({ onFormSubmit }) {
                         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
                     </p>
 
-                    {/* Form fields */}
                     <div className="mb-4">
                         <label htmlFor="name" className="block text-sm text-gray-400">
                             Your Name:
